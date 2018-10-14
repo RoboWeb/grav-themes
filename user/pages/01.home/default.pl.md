@@ -7,7 +7,6 @@ resume:
         github: '0'
     sidebar:
         profile_img_alt: 'Czyścimy - dywany, wykładziny, tapicerki'
-        profile_img_2_alt: czyscimy.zgora.pl
         profile_img_comp: '30'
         name: Czyścimy!
         subtitle: czyscimy.zgora.pl
@@ -17,6 +16,13 @@ resume:
             resume: Usługi
             portfolio: Galeria
             contact: Kontakt
+        profile_img_2_alt: czyscimy.zgora.pl
+        profile_img:
+            user/pages/01.home/czyscimy.png:
+                name: czyscimy.png
+                type: image/png
+                size: 52292
+                path: user/pages/01.home/czyscimy.png
     home:
         fullname: ' '
         email: kontakt@czyscimy.zgora.pl
