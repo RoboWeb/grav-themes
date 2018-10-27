@@ -1,0 +1,78 @@
+name: Czyscimy
+version: 0.1.0
+description: Czyścimy - dywany, wykładziny, tapicerki
+icon: user-circle-o
+author:
+  name: Tomasz Wolny ~RoboWeb
+  email: contact@roboweb.eu
+homepage: https://github.com/tomasz-wolny-robo-web/grav-theme-czyscimy
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/tomasz-wolny-robo-web/grav-theme-czyscimy/issues
+readme: https://github.com/tomasz-wolny-robo-web/grav-theme-czyscimy/blob/develop/README.md
+license: MIT
+
+dependencies:
+    - { name: grav, version: '>=1.5.0' }
+    - { name: admin, version: '>=1.8.0' }
+    - { name: bootstrapper, version: '>=2.0.0' }
+
+form:
+  validation: loose
+
+  fields:
+    production-mode:
+      type: toggle
+      label: Production mode
+      help: When enabled, Czyścimy will render with minified CSS
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    header_section:
+      type: section
+      title: Header Defaults
+      underline: true
+
+    header.style:
+      type: toggle
+      label: Style
+      help: choose a style - a dark-friendly style or light
+      highlight: 1
+      default: 0
+      options:
+        0: "Dark"
+        1: "Light"
+      validate:
+        type: bool
+    
+    header.logo:
+      type: file
+      label: Your Logo
+      size: large
+      destination: 'theme://assets/images/logo'
+      multiple: false
+      markdown: true
+      description: Will be used instead of default logo `theme://images/grav-logo.svg`. Remember which style You have choose.
+      accept:
+        - image/*
+    
+    page_loader_section:
+      type: section
+      title: Page loader
+      underline: true
+    
+    page_loader.bgimage:
+      type: file
+      label: Page Loader Background image
+      size: large
+      destination: 'theme://assets/images'
+      multiple: false
+      markdown: true
+      description: Will be used instead of default logo `theme://images/grav-logo.svg`.
+      accept:
+        - image/*

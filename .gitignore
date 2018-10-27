@@ -24,9 +24,7 @@ user/data/*
 user/plugins/*
 !user/plugins/.*
 user/themes/*
-!user/themes/.*
-user/themes/czyscimy/*
-!user/themes/czyscimy/.*
+!user/themes/czyscimy/*
 user/localhost/config/security.yaml
 user/config/security.yaml
 
