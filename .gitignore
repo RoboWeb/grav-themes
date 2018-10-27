@@ -25,6 +25,8 @@ user/plugins/*
 !user/plugins/.*
 user/themes/*
 !user/themes/.*
+user/themes/czyscimy/*
+!user/themes/czyscimy/.*
 user/localhost/config/security.yaml
 user/config/security.yaml
 
@@ -43,3 +45,10 @@ tests/_support/_generated/*
 tests/cache/*
 tests/error.log
 /system/templates/testing
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
