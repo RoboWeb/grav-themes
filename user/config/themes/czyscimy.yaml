@@ -1,0 +1,6 @@
+enabled: true
+dropdown:
+  enabled: true
+load_bootrapper_plugin: true
+production-mode: false
+header-style: '1'
