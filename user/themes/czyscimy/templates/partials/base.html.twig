@@ -1,76 +1,98 @@
-{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+{% set themeConf = attribute(config.themes, config.system.pages.theme) %}
+{% set logo = themeConf.general.logo | first %}
+
 <!DOCTYPE html>
-<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
-<head>
-{% block head %}
-    <meta charset="utf-8" />
-    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+<html lang="{{ grav.language.getActive ?: config.site.default_lang }}">
+    <head>
+        {% block head %}
+            <meta charset="utf-8"/>
+            <title>
+                {% if header.title %}{{ header.title|e('html') }}
+                    |
+                {% endif %}{{ site.title|e('html') }}</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include 'partials/metadata.html.twig' %}
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            {% include 'partials/metadata.html.twig' %}
 
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('theme://assets/images/favicons/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('theme://assets/images/favicons/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('theme://assets/images/favicons/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ url('theme://assets/images/favicons/site.webmanifest') }}">
-    <link rel="mask-icon" href="{{ url('theme://assets/images/favicons/safari-pinned-tab.svg') }}" color="#4c4c4c">
-    <link rel="shortcut icon" href="{{ url('theme://assets/images/favicons/favicon.ico') }}">
-    <meta name="msapplication-TileColor" content="#4c4c4c">
-    <meta name="msapplication-config" content="{{ url('theme://assets/images/favicons/browserconfig.xml') }}">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="canonical" href="{{ page.url(true, true) }}" />
+            <link rel="apple-touch-icon" sizes="180x180" href="{{ url('theme://assets/images/favicons/apple-touch-icon.png') }}">
+            <link rel="icon" type="image/png" sizes="32x32" href="{{ url('theme://assets/images/favicons/favicon-32x32.png') }}">
+            <link rel="icon" type="image/png" sizes="16x16" href="{{ url('theme://assets/images/favicons/favicon-16x16.png') }}">
+            <link rel="manifest" href="{{ url('theme://assets/images/favicons/site.webmanifest') }}">
+            <link rel="mask-icon" href="{{ url('theme://assets/images/favicons/safari-pinned-tab.svg') }}" color="#4c4c4c">
+            <link rel="shortcut icon" href="{{ url('theme://assets/images/favicons/favicon.ico') }}">
+            <meta name="msapplication-TileColor" content="#4c4c4c">
+            <meta name="msapplication-config" content="{{ url('theme://assets/images/favicons/browserconfig.xml') }}">
+            <meta name="theme-color" content="#ffffff">
+            <link rel="canonical" href="{{ page.url(true, true) }}"/>
 
-    {% block stylesheets %}
-        {# {% do assets.addCss('theme://assets/bootstrap/dist/css/bootstrap.min.css', 98) %} #}
-    {% endblock %}
-    {{ assets.css() }}
+            <!-- Bevan for headers & Roboto Light for regular -->
+            <link href="https://fonts.googleapis.com/css?family=Bevan|Roboto:300&amp;subset=latin-ext" rel="stylesheet">
+            <!-- Font Awesome v4.x -->
+            <script src="https://use.fontawesome.com/b610cbfa44.js"></script>
 
-    {% block javascripts %}
-        {% do assets.addJs('jquery', 100) %}
-        {# {% do assets.addJs('theme://assets/bootstrap/dist/js/bootstrap.bundle.min.js', {'priority': 98, 'group': 'bottom'}) %} #}
-    {% endblock %}
-    {{ assets.js() }}
-
-{% endblock head%}
-</head>
-<body id="top" class="{{ page.header.body_classes }}">
-
-{% block header %}
-    <div class="header">
-        <div class="wrapper padding">
-            <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
-                <i class="fa fa-rebel"></i>
-                {{ config.site.title }}
-            </a>
-            {% block header_navigation %}
-            <nav class="main-nav">
-                {% include 'partials/navigation.html.twig' %}
-            </nav>
+            {% block stylesheets %}
+                {% do 
+                    assets.addCss('theme://assets/css/main.css', 98) %}
             {% endblock %}
-        </div>
-    </div>
-{% endblock %}
+            {{ assets.css() }}
 
-{% block body %}
-    <section id="body">
-        <div class="wrapper padding">
-        {% block content %}{% endblock %}
-        </div>
-    </section>
-{% endblock %}
+            {% block javascripts %}
+                {% do 
+                    assets.addJs('jquery', 100) %}
+            {% endblock %}
+            {{ assets.js() }}
 
-{% block footer %}
-    <div class="footer text-center">
-        <div class="wrapper padding">
-            <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.rockettheme.com">RocketTheme</a>.</p>
-        </div>
-    </div>
-{% endblock %}
+        {% endblock head%}
+    </head>
 
-{% block bottom %}
-    {{ assets.js('bottom') }}
-{% endblock %}
+    {% set bodyClasses = [page.header.body_classes, themeConf.general.navigation ? 'has-sidebar' : null] %}
 
-</body>
+    <body id="top" class="{{ bodyClasses | join(' ') }}">
+
+        {% block header %}
+            <div class="{{ themeConf.general.navigation ? 'sidebar' : 'header' }}">
+                <div class="wrapper padding">
+                    <a class="logo left text-center" href="{{ base_url == '' ? '/' : base_url }}">
+                        {% if logo %}
+                            {% if logo.type == 'image/svg+xml' %}
+                                <img src="{{ url(logo.path) }}" class="rounded img-fluid" alt="Logo"/>
+                            {% endif %}
+                        {% else %}
+                            <i class="fa fa-rebel"></i>
+                        {% endif %}
+                        {{ config.site.title }}
+                    </a>
+                    {% block header_navigation %}
+                        <nav class="main-nav">
+                            {% include 'partials/navigation.html.twig' %}
+                        </nav>
+                    {% endblock %}
+                </div>
+            </div>
+        {% endblock %}
+
+        {% block body %}
+            <section id="body" class="">
+                <div class="container">
+                    <div class="row">
+                        {% block content %}{% endblock %}
+                    </div>
+                </div>
+            </section>
+        {% endblock %}
+
+        {% block footer %}
+            <div class="footer text-center">
+                <div class="wrapper padding">
+                    {% include 'partials/signature.html.twig' %}
+                </div>
+            </div>
+        {% endblock %}
+
+        {% block bottom %}
+            {{ assets.js('bottom') }}
+        {% endblock %}
+
+    </body>
 </html>

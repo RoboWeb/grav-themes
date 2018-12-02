@@ -3,8 +3,10 @@ version: 0.1.0
 description: Czyścimy - dywany, wykładziny, tapicerki
 icon: user-circle-o
 author:
-  name: Tomasz Wolny ~RoboWeb
+  name: RoboWeb
+  realname: Tomasz Wolny
   email: contact@roboweb.eu
+  url: https://resume.io/r/CIriRNkv4
 homepage: https://github.com/tomasz-wolny-robo-web/grav-theme-czyscimy
 demo: http://demo.yoursite.com
 keywords: grav, theme, etc
@@ -33,40 +35,49 @@ form:
       validate:
         type: bool
 
-    header_section:
+    general_section:
       type: section
-      title: Header Defaults
+      title: Theme Defaults
       underline: true
 
-    header.style:
+    general.style:
       type: toggle
       label: Style
       help: choose a style - a dark-friendly style or light
       highlight: 1
-      default: 0
+      default: 1
       options:
         0: "Dark"
         1: "Light"
       validate:
         type: bool
     
-    header.logo:
+    general.logo:
       type: file
       label: Your Logo
       size: large
       destination: 'theme://assets/images/logo'
       multiple: false
+      limit: 1
       markdown: true
+      preview_images: true
       description: Will be used instead of default logo `theme://images/grav-logo.svg`. Remember which style You have choose.
       accept:
         - image/*
     
-    page_loader_section:
-      type: section
-      title: Page loader
-      underline: true
-    
-    page_loader.bgimage:
+    general.navigation:
+      type: toggle
+      label: Navigation
+      help: Nawigacja w górnym pasku, czy w bocznym?
+      highlight: 1
+      default: 1
+      options:
+        0: "Górna"
+        1: "Boczna"
+      validate:
+        type: bool
+
+    general.pageloader.bgimage:
       type: file
       label: Page Loader Background image
       size: large
