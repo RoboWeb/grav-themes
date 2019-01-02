@@ -1,0 +1,12 @@
+1547068528
+a:2:{s:7:"content";s:635:"
+<section id="" class="section modular-hero hero parallax text-light " style="background-image: url(/_www_czyscimy/user/pages/01.home/01._hero/carpet-cleaner.jpg);">
+    <div class="image-overlay"></div>
+    <section class="container grid-lg" style="text-align: center">
+        <h1>Say Hello to Grav</h1>
+<h2>Fast, Simple, Powerful...</h2>
+<p>Grav is a modern flat-file CMS system that focuses on making web development fun again.</p>
+<p><a href="https://learn.getgrav.org" class="btn btn-primary btn-lg" target="_blank">Read the documentation</a></p>
+    </section>
+    <i id="to-start" class="pulse fa fa-angle-down"></i>
+</section>";s:12:"content_meta";N;}

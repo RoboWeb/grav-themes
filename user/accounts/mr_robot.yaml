@@ -1,0 +1,11 @@
+email: ykee.tomasz.wolny@gmail.com
+fullname: mrRobot
+title: Webmaster
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$aV94JrIBygCvQfpqMjP2S.gd3gQ0xGlxwCKew8ycKeChLKPJUa2EG

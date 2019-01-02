@@ -1,0 +1,142 @@
+1547068365
+a:2:{s:7:"content";s:8356:"<section class="section modular-features small">
+        <section class="container grid-lg">
+            <div class="frame-box">
+
+                <h1>Stuffed Full of Features</h1>
+<h2><strong>Check out small smattering...</strong></h2>
+
+                <div class="columns">
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-text-height"></i>
+                                                     <h6>Markdown Syntax</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-code"></i>
+                                                     <h6>Twig Templating</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-rocket"></i>
+                                                     <h6>Smart Caching</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-tags"></i>
+                                                     <h6>Flexible Taxonomies</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-cloud-download"></i>
+                                                     <h6>Simple Install</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-cogs"></i>
+                                                     <h6>Powerful Plugins</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-dashboard"></i>
+                                                     <h6>Intuitive UI</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-file-text"></i>
+                                                     <h6>File-Based</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-language"></i>
+                                                     <h6>Multi-Language</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-users"></i>
+                                                     <h6>Users & Roles</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-image"></i>
+                                                     <h6>Image Processing</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-bookmark"></i>
+                                                     <h6>Documentation</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-github"></i>
+                                                     <h6>On Github</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-html5"></i>
+                                                     <h6>Responsive Design</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-terminal"></i>
+                                                     <h6>CLI Power</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-3 col-md-4 col-sm-6">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-heart-o"></i>
+                                                     <h6>Awesomazing</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                </div>
+            </div>
+        </section>
+</section>
+";s:12:"content_meta";N;}
