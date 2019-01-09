@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/_www_czyscimy/user/themes/quark/languages.yaml',
-    'modified' => 1544825674,
+    'modified' => 1547062057,
     'data' => [
         'en' => [
             'THEME_QUARK' => [
@@ -351,6 +351,41 @@ return [
                     ],
                     'SYNDICATE' => [
                         'HEADLINE' => 'Syndicatie'
+                    ]
+                ]
+            ]
+        ],
+        'pl' => [
+            'THEME_QUARK' => [
+                'BLOG' => [
+                    'ITEM' => [
+                        'CONTINUE_READING' => 'Więcej...',
+                        'NEXT_POST' => 'Następny',
+                        'PREV_POST' => 'Poprzedni'
+                    ]
+                ],
+                'SIDEBAR' => [
+                    'SIMPLE_SEARCH' => [
+                        'HEADLINE' => 'Szukaj'
+                    ],
+                    'RELATED_POSTS' => [
+                        'HEADLINE' => 'Inne artykuły'
+                    ],
+                    'RANDOM_ARTICLE' => [
+                        'HEADLINE' => 'Losowy artykuł',
+                        'FEELING_LUCKY' => 'Czuję się szczęśliwy!'
+                    ],
+                    'SOME_TEXT_WIDGET' => [
+                        'HEADLINE' => 'Jakiś widżet tekstowy'
+                    ],
+                    'POPULAR_TAGS' => [
+                        'HEADLINE' => 'Tagi'
+                    ],
+                    'ARCHIVES' => [
+                        'HEADLINE' => 'Archiwum'
+                    ],
+                    'SYNDICATE' => [
+                        'HEADLINE' => 'Syndicate'
                     ]
                 ]
             ]

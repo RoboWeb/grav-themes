@@ -1,0 +1,62 @@
+1547668898
+a:2:{s:7:"content";s:3690:"<section class="section modular-features standard">
+        <section class="container grid-lg">
+            <div class="frame-box">
+
+                <h1>Oto skromna lista naszych usług</h1>
+<h2><strong>Zajmujemy się profesjonalnie i skutecznie:</strong></h2>
+
+                <div class="columns">
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                      <a href="uslugi/pranie-tapicerki ">                      <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-bed"></i>
+                                                     <h6>Praniem tapicerki meblowej</h6>
+                                               </div>
+                      </a>                      <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                      <a href="uslugi/pranie-tapicerki-samochodowej-jachtowej">                      <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-ship"></i>
+                                                     <h6>Praniem tapicerki samochodowej i jachtowej</h6>
+                                               </div>
+                      </a>                      <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                      <a href="uslugi/czyszczenie-dywanu-i-wykladziny">                      <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-map-o"></i>
+                                                     <h6>Praniem dywanów</h6>
+                                               </div>
+                      </a>                      <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-check-square"></i>
+                                                     <h6>Czyszczeniem wnętrza kabin pojazdów i jachtów</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                      <a href="uslugi/ozonowanie">                      <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-shower"></i>
+                                                     <h6>Ozonowaniem pomieszczeń i kabin</h6>
+                                               </div>
+                      </a>                      <div class="feature-content">
+                                               </div>
+                   </div>
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-pagelines"></i>
+                                                     <h6>Usuwaniem nieprzyjemnych zapachów</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                               </div>
+                   </div>
+                                </div>
+            </div>
+        </section>
+</section>
+";s:12:"content_meta";N;}

@@ -1,9 +1,18 @@
 {% set logo = theme_var(mobile ? 'custom_logo_mobile' : 'custom_logo') %}
+{% set logo_dark_bg = theme_var ('custom_logo_dark_bg') %}
+{% set logo_light_bg = theme_var ('custom_logo_light_bg') %}
+<!-- <logo> -->
 <a href="{{ home_url }}" class="navbar-brand mr-10">
-{% if logo %}
-  {% set logo_file = (logo|first).name %}
-  <img src="{{ url('theme://images/logo/' ~ logo_file)  }}" alt="{{ site.name }}" />
-{% else %}
-  {% include('@images/grav-logo.svg') %}
-{% endif %}
+    {% if logo_light_bg and logo_dark_bg %}
+        {% set logo_db_file = (logo_dark_bg|first).name %}
+        {% set logo_lb_file = (logo_light_bg|first).name %}
+        <img class="logo_lb" src="{{ url('theme://images/logo/' ~ logo_lb_file) }}" alt="{{ site.name }}"/>
+        <img class="logo_db" src="{{ url('theme://images/logo/' ~ logo_db_file) }}" alt="{{ site.name }}"/>
+        {% elseif logo %}
+        {% set logo_file = (logo|first).name %}
+        <img src="{{ url('theme://images/logo/' ~ logo_file) }}" alt="{{ site.name }}"/>
+        {% else %}
+        {% include('@images/grav-logo.svg') %}
+    {% endif %}
 </a>
+<!-- </logo> -->

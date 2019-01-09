@@ -1,0 +1,139 @@
+#admin-main .admin-block .report-output h1 {
+  margin-top: 2rem;
+}
+
+#admin-main .admin-block .report-output .toast .btn {
+  float: right;
+  margin-top: -2px;
+  margin-right: 0.5rem;
+  color: #fff;
+  font-size: 90%;
+  padding: 2px 7px;
+  border-radius: 3px;
+  border: 1px solid #29b739;
+  background-color: #2bc03c;
+}
+
+#admin-main .admin-block .report-output .toast .btn:hover {
+  border-color: #27af37;
+  background-color: #29b739;
+}
+
+#admin-main .admin-block .report-output .toast .btn.btn-error {
+  border: 1px solid #f2403f;
+  background-color: #f34a49;
+}
+
+#admin-main .admin-block .report-output .toast .btn.btn-error:hover {
+  border-color: #f23735;
+  background-color: #f2403f;
+}
+
+#admin-main .admin-block .report-output .toast .btn.btn-warning {
+  border: 1px solid #ff7702;
+  background-color: #ff7d0c;
+}
+
+#admin-main .admin-block .report-output .toast .btn.btn-warning:hover {
+  border-color: #f67300;
+  background-color: #ff7702;
+}
+
+.report-output ul.problems {
+  margin: 1rem 0;
+  list-style: none;
+  padding: 0;
+  background-color: #f7f7f7;
+}
+
+.report-output ul.problems h5 {
+  margin: 0;
+}
+
+.report-output ul.problems li.menu {
+  margin-bottom: 1rem;
+  -webkit-box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+}
+
+.report-output ul.problems .toast {
+  font-size: 1rem;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+}
+
+.report-output ul.problems .toast.toast-success {
+  background-color: #2ECC40;
+}
+
+.report-output ul.problems .toast.toast-error {
+  background-color: #F45857;
+}
+
+.report-output ul.problems .toast.toast-warning {
+  background-color: #FF851B;
+}
+
+.report-output ul.problems .toast .btn {
+  margin-left: 1rem;
+  text-decoration: none !important;
+}
+
+.report-output ul.problems .toast .btn i {
+  margin-right: 0.3rem;
+}
+
+.report-output ul.problems ul.details {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 1rem;
+  background-color: #fff;
+}
+
+.report-output ul.problems ul.details li {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.report-output ul.problems ul.details code {
+  font-size: 90%;
+  line-height: 1.2;
+  padding: .1rem .2rem;
+  color: #288fed;
+  border-radius: .1rem;
+  background: #f0f7fe;
+  vertical-align: middle;
+}
+
+.report-output ul.problems ul.details .menu-item {
+  margin-top: .5rem !important;
+  border-top: 1px solid #f7f7f7;
+  padding-top: 0.5rem;
+}
+
+.report-output ul.problems ul.details .menu-item:first-child {
+  border: none;
+}
+
+.report-output ul.problems ul.details .menu-badge {
+  padding: 0;
+  display: inline;
+  float: right;
+}
+
+.report-output ul.problems ul.details .menu-badge .label {
+  font-size: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: 3px;
+}
+
+.report-output ul.problems ul.details .menu-badge .label.label-success {
+  background: #2ECC40;
+}
+
+.report-output ul.problems ul.details .menu-badge .label.label-error {
+  background: #F45857;
+}
+/*# sourceMappingURL=admin.css.map */

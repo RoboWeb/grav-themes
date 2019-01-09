@@ -1,0 +1,69 @@
+1547668898
+a:2:{s:7:"content";s:4179:"<section class="section modular-features standard">
+        <section class="container grid-lg">
+            <div class="frame-box">
+
+                <h1>Dlaczego czyścimy.pl?</h1>
+<h2><strong>Zdobyte doświadczenie pozwoliło nam wypracować konkretne standardy</strong></h2>
+<p>Wierzymy, że najlepszą sposobem, by coś zrobić dobrze, to zrobić to z <strong>pasją</strong>!</p>
+
+                <div class="columns">
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-fighter-jet"></i>
+                                                     <h6>Szybko</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                                  <p>Może być dobrze i szybko - to kwestia doświadczenia.</p>
+                                               </div>
+                   </div>
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-car"></i>
+                                                     <h6>U klienta</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                                  <p>Dojedziemy tam, gdzie jest to konieczne.</p>
+                                               </div>
+                   </div>
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-magic"></i>
+                                                     <h6>Sprawdzona technologia</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                                  <p>Nie zdajemy się na przypadek - stosujemy nowoczesne i sprawdzone środki.</p>
+                                               </div>
+                   </div>
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-arrows-alt"></i>
+                                                     <h6>Elastyczność</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                                  <p>Dopasujemy się do Twoich potrzeb.</p>
+                                               </div>
+                   </div>
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                                            <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-puzzle-piece"></i>
+                                                     <h6>Minimum - Optimum</h6>
+                                               </div>
+                                            <div class="feature-content">
+                                                  <p>Wybierasz co potrzebujesz - płacisz za to, co zrobimy.</p>
+                                               </div>
+                   </div>
+                                   <div class="column col-4 col-md-6 col-sm-12">
+                      <a href="cennik">                      <div class="feature-icon">
+                         <i class="fa fa-fw fa fa-money"></i>
+                                                     <h6>Płatności</h6>
+                                               </div>
+                      </a>                      <div class="feature-content">
+                                                  <p>Nie chcemy, by klient zbankrutował.</p>
+                                               </div>
+                   </div>
+                                </div>
+            </div>
+        </section>
+</section>
+";s:12:"content_meta";N;}

@@ -4,8 +4,11 @@ title: Webmaster
 state: enabled
 access:
   admin:
-    login: true
-    super: true
+    super: 'true'
+    login: 'true'
   site:
-    login: true
+    login: 'true'
 hashed_password: $2y$10$aV94JrIBygCvQfpqMjP2S.gd3gQ0xGlxwCKew8ycKeChLKPJUa2EG
+language: pl
+twofa_enabled: false
+twofa_secret: AMWW225MKYY6NVDEYB2PCBFGYC7GNV5N

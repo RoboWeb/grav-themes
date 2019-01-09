@@ -1,13 +1,21 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1546462389,
-    'checksum' => '3f7e712c5920f75edcb5375eb20e9d60',
+    'timestamp' => 1547064096,
+    'checksum' => 'abce8a6da1298eff363258641b0cc698',
     'files' => [
         'user/config' => [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1546462276
+            ],
+            'plugins/relatedpages' => [
+                'file' => 'user/config/plugins/relatedpages.yaml',
+                'modified' => 1547056380
+            ],
+            'plugins/taxonomylist' => [
+                'file' => 'user/config/plugins/taxonomylist.yaml',
+                'modified' => 1547053618
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -15,7 +23,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1544825672
+                'modified' => 1547059851
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -23,7 +31,11 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1544825672
+                'modified' => 1547064093
+            ],
+            'themes/quark' => [
+                'file' => 'user/config/themes/quark.yaml',
+                'modified' => 1546784691
             ]
         ],
         'system/config' => [
@@ -72,6 +84,14 @@ return [
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1546462388
+            ],
+            'plugins/relatedpages' => [
+                'file' => 'user/plugins/relatedpages/relatedpages.yaml',
+                'modified' => 1547053735
+            ],
+            'plugins/taxonomylist' => [
+                'file' => 'user/plugins/taxonomylist/taxonomylist.yaml',
+                'modified' => 1547053600
             ]
         ]
     ],
@@ -241,6 +261,62 @@ return [
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'relatedpages' => [
+                'enabled' => true,
+                'limit' => 10,
+                'show_score' => false,
+                'score_threshold' => 20,
+                'filter' => [
+                    'items' => [
+                        '@page' => [
+                            0 => '/uslugi',
+                            1 => '/portfolio'
+                        ]
+                    ],
+                    'order' => [
+                        'by' => 'date',
+                        'dir' => 'desc'
+                    ]
+                ],
+                'page_in_filter' => true,
+                'explicit_pages' => [
+                    'process' => true,
+                    'score' => 100
+                ],
+                'taxonomy_match' => [
+                    'taxonomy' => [
+                        0 => 'tag'
+                    ],
+                    'taxonomy_taxonomy' => [
+                        'process' => true,
+                        'score_scale' => [
+                            1 => '50',
+                            2 => '75',
+                            3 => '100'
+                        ]
+                    ],
+                    'taxonomy_content' => [
+                        'process' => true,
+                        'score_scale' => [
+                            1 => '20',
+                            2 => '30',
+                            3 => '45',
+                            4 => '60',
+                            5 => '70',
+                            6 => '80',
+                            7 => '90',
+                            8 => '100'
+                        ]
+                    ]
+                ],
+                'content_match' => [
+                    'process' => true
+                ]
+            ],
+            'taxonomylist' => [
+                'enabled' => true,
+                'route' => '/blog'
             ]
         ],
         'media' => [
@@ -550,7 +626,7 @@ return [
         ],
         'site' => [
             'title' => 'Grav',
-            'default_lang' => 'en',
+            'default_lang' => 'pl',
             'author' => [
                 'name' => 'Joe Bloggs',
                 'email' => 'joe@test.com'
@@ -612,9 +688,9 @@ return [
             'intl_enabled' => true,
             'languages' => [
                 'supported' => [
-                    
+                    0 => 'pl'
                 ],
-                'include_default_lang' => true,
+                'include_default_lang' => false,
                 'translations' => true,
                 'translations_fallback' => true,
                 'session_store_active' => false,
@@ -676,7 +752,7 @@ return [
                 'etag' => false,
                 'vary_accept_encoding' => false,
                 'redirect_default_route' => false,
-                'redirect_default_code' => 302,
+                'redirect_default_code' => '302',
                 'redirect_trailing_slash' => true,
                 'ignore_files' => [
                     0 => '.DS_Store'
@@ -762,7 +838,8 @@ return [
                 'allowed_fallback_types' => [
                     
                 ],
-                'auto_metadata_exif' => false
+                'auto_metadata_exif' => false,
+                'upload_limit' => 2097152
             ],
             'session' => [
                 'enabled' => true,
@@ -784,6 +861,47 @@ return [
             'strict_mode' => [
                 'yaml_compat' => true,
                 'twig_compat' => true
+            ]
+        ],
+        'themes' => [
+            'quark' => [
+                'enabled' => true,
+                'production-mode' => false,
+                'grid-size' => 'grid-lg',
+                'header-fixed' => true,
+                'header-animated' => true,
+                'header-dark' => true,
+                'header-transparent' => true,
+                'sticky-footer' => true,
+                'blog-page' => '/blog',
+                'spectre' => [
+                    'exp' => false,
+                    'icons' => false
+                ],
+                'custom_logo_light_bg' => [
+                    'user/themes/quark/images/logo/czyscimy-mono---light-bg-opt.svg' => [
+                        'name' => 'czyscimy-mono---light-bg-opt.svg',
+                        'type' => 'image/svg+xml',
+                        'size' => 22050,
+                        'path' => 'user/themes/quark/images/logo/czyscimy-mono---light-bg-opt.svg'
+                    ]
+                ],
+                'custom_logo_dark_bg' => [
+                    'user/themes/quark/images/logo/czyscimy-mono---dark-bg-opt.svg' => [
+                        'name' => 'czyscimy-mono---dark-bg-opt.svg',
+                        'type' => 'image/svg+xml',
+                        'size' => 22050,
+                        'path' => 'user/themes/quark/images/logo/czyscimy-mono---dark-bg-opt.svg'
+                    ]
+                ],
+                'custom_logo' => [
+                    'user/themes/quark/images/logo/czyscimy.svg' => [
+                        'name' => 'czyscimy.svg',
+                        'type' => 'image/svg+xml',
+                        'size' => 18843,
+                        'path' => 'user/themes/quark/images/logo/czyscimy.svg'
+                    ]
+                ]
             ]
         ]
     ]

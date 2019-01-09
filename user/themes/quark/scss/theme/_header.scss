@@ -14,9 +14,33 @@
     color: $dark-color;
   }
 
-  .logo svg path {
-    fill: $header-color-dark;
+  .logo {
+    svg path {
+      fill: $header-color-dark;
+    }
+
+    img.logo_db, img.logo_lb {
+      display: block;
+      position: absolute;
+      top: 4px;
+      width: 70px;
+      height: 70px;
+    }
+
+    .logo_db {      
+      opacity: 1;
+    }
+
+    .logo_lb {
+      opacity: 0;
+    }  
+    a {
+      height: 100%;
+      width: 90px;
+    }  
   }
+
+  
 
   .header-dark &:not(.scrolled) {
     background: $header-color-dark;
@@ -85,8 +109,22 @@ body.header-fixed.header-animated {
     }
 
     .logo {
-      svg, img {
+      svg, img:not(.logo_lb) {
         height: 28px;
+      }
+      img.logo_lb, img.logo_db, a {
+        width: 40px;
+        height: 40px;
+      }
+
+      img.logo_db, img.logo_lb {
+        top: 1px;
+      }
+      .logo_lb {        
+        opacity: 1;
+      } 
+      .logo_db {
+        opacity: 0;
       }
     }
 

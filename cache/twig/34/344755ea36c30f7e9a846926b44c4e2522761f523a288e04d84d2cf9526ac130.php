@@ -43,58 +43,58 @@ class __TwigTemplate_91d8641f4b19a29c6888a4b810f6714969b6368339f621c16af73aa3c71
 ";
         // line 7
         $this->displayBlock('head', $context, $blocks);
-        // line 36
+        // line 46
         echo "</head>
 <body id=\"top\" class=\"";
-        // line 37
+        // line 47
         $this->displayBlock('body_classes', $context, $blocks);
         echo "\">
     <div id=\"page-wrapper\">
     ";
-        // line 39
+        // line 49
         $this->displayBlock('header', $context, $blocks);
-        // line 70
+        // line 80
         echo "
     ";
-        // line 71
+        // line 81
         $this->displayBlock('hero', $context, $blocks);
-        // line 72
+        // line 82
         echo "
         <section id=\"start\">
         ";
-        // line 74
-        $this->displayBlock('body', $context, $blocks);
         // line 84
+        $this->displayBlock('body', $context, $blocks);
+        // line 94
         echo "        </section>
 
     </div>
 
     ";
-        // line 88
+        // line 98
         $this->displayBlock('footer', $context, $blocks);
-        // line 91
+        // line 101
         echo "    
     <div class=\"mobile-container\">
         <div class=\"overlay\" id=\"overlay\">
             <div class=\"mobile-logo\">
                 ";
-        // line 95
-        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 95)->display(array_merge($context, array("mobile" => true)));
-        // line 96
+        // line 105
+        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 105)->display(array_merge($context, array("mobile" => true)));
+        // line 106
         echo "            </div>
             <nav class=\"overlay-menu\">
                 ";
-        // line 98
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 98)->display(array_merge($context, array("tree" => true)));
-        // line 99
+        // line 108
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 108)->display(array_merge($context, array("tree" => true)));
+        // line 109
         echo "            </nav>
         </div>
     </div>
 
 ";
-        // line 103
+        // line 113
         $this->displayBlock('bottom', $context, $blocks);
-        // line 106
+        // line 116
         echo "
 </body>
 </html>
@@ -122,27 +122,58 @@ class __TwigTemplate_91d8641f4b19a29c6888a4b810f6714969b6368339f621c16af73aa3c71
         $this->loadTemplate("partials/metadata.html.twig", "partials/base.html.twig", 13)->display($context);
         // line 14
         echo "
-    <link rel=\"icon\" type=\"image/png\" href=\"";
+    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"";
         // line 15
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/favicon.png");
-        echo "\" />
-    <link rel=\"canonical\" href=\"";
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/favicons/apple-touch-icon.png");
+        echo "\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"";
         // line 16
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/favicons/favicon-32x32.png");
+        echo "\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"";
+        // line 17
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/favicons/favicon-16x16.png");
+        echo "\">
+    <link rel=\"manifest\" href=\"";
+        // line 18
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/favicons/site.webmanifest");
+        echo "\">
+    <link rel=\"mask-icon\" href=\"";
+        // line 19
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/favicons/safari-pinned-tab.svg");
+        echo "\" color=\"#4c4c4c\">
+    <link rel=\"shortcut icon\" href=\"";
+        // line 20
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/favicons/favicon.ico");
+        echo "\">
+    <meta name=\"msapplication-TileColor\" content=\"#ffc40d\">
+    <meta name=\"msapplication-TileImage\" content=\"";
+        // line 22
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/favicons/mstile-144x144.png");
+        echo "\">
+    <meta name=\"msapplication-config\" content=\"";
+        // line 23
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/favicons/browserconfig.xml");
+        echo "\">
+    <meta name=\"theme-color\" content=\"#ffffff\">
+
+    <link rel=\"canonical\" href=\"";
+        // line 26
         echo $this->getAttribute(($context["page"] ?? null), "url", array(0 => true, 1 => true), "method");
         echo "\" />
 
     ";
-        // line 18
+        // line 28
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 26
+        // line 36
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "css", array(), "method");
         echo "
 
     ";
-        // line 28
+        // line 38
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 33
+        // line 43
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(), "method");
         echo "
@@ -150,92 +181,92 @@ class __TwigTemplate_91d8641f4b19a29c6888a4b810f6714969b6368339f621c16af73aa3c71
 ";
     }
 
-    // line 18
+    // line 28
     public function block_stylesheets($context, array $blocks = array())
     {
-        // line 19
+        // line 29
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => ("theme://css-compiled/spectre" . ($context["compress"] ?? null))), "method");
-        // line 20
+        // line 30
         echo "        ";
         if ($this->env->getExtension('Grav\Common\Twig\TwigExtension')->themeVarFunc("spectre.exp")) {
             $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => ("theme://css-compiled/spectre-exp" . ($context["compress"] ?? null))), "method");
         }
-        // line 21
+        // line 31
         echo "        ";
         if ($this->env->getExtension('Grav\Common\Twig\TwigExtension')->themeVarFunc("spectre.icons")) {
             $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => ("theme://css-compiled/spectre-icons" . ($context["compress"] ?? null))), "method");
         }
-        // line 22
+        // line 32
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => ("theme://css-compiled/theme" . ($context["compress"] ?? null))), "method");
-        // line 23
+        // line 33
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/custom.css"), "method");
-        // line 24
+        // line 34
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/line-awesome.min.css"), "method");
-        // line 25
+        // line 35
         echo "    ";
     }
 
-    // line 28
+    // line 38
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 29
+        // line 39
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "jquery", 1 => 101), "method");
-        // line 30
+        // line 40
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/jquery.treemenu.js", 1 => array("group" => "bottom")), "method");
-        // line 31
+        // line 41
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/site.js", 1 => array("group" => "bottom")), "method");
-        // line 32
+        // line 42
         echo "    ";
     }
 
-    // line 37
+    // line 47
     public function block_body_classes($context, array $blocks = array())
     {
         echo ($context["body_classes"] ?? null);
     }
 
-    // line 39
+    // line 49
     public function block_header($context, array $blocks = array())
     {
-        // line 40
+        // line 50
         echo "        <section id=\"header\" class=\"section\">
             <section class=\"container ";
-        // line 41
+        // line 51
         echo ($context["grid_size"] ?? null);
         echo "\">
                 <nav class=\"navbar\">
                     <section class=\"navbar-section logo\">
                         ";
-        // line 44
-        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 44)->display($context);
-        // line 45
+        // line 54
+        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 54)->display($context);
+        // line 55
         echo "                    </section>
                     <section class=\"navbar-section desktop-menu\">
 
                         <nav class=\"dropmenu animated\">
                         ";
-        // line 49
+        // line 59
         $this->displayBlock('header_navigation', $context, $blocks);
-        // line 52
+        // line 62
         echo "                        </nav>
 
                         ";
-        // line 54
+        // line 64
         if (($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", array()), "login", array()), "enabled", array()) && $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "user", array()), "username", array()))) {
-            // line 55
+            // line 65
             echo "                            <span class=\"login-status-wrapper\"><i class=\"fa fa-user\"></i> ";
-            $this->loadTemplate("partials/login-status.html.twig", "partials/base.html.twig", 55)->display($context);
+            $this->loadTemplate("partials/login-status.html.twig", "partials/base.html.twig", 65)->display($context);
             echo "</span>
                         ";
         }
-        // line 57
+        // line 67
         echo "
                     </section>
                 </nav>
@@ -251,76 +282,76 @@ class __TwigTemplate_91d8641f4b19a29c6888a4b810f6714969b6368339f621c16af73aa3c71
     ";
     }
 
-    // line 49
+    // line 59
     public function block_header_navigation($context, array $blocks = array())
     {
-        // line 50
+        // line 60
         echo "                            ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 50)->display($context);
-        // line 51
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 60)->display($context);
+        // line 61
         echo "                        ";
     }
 
-    // line 71
+    // line 81
     public function block_hero($context, array $blocks = array())
     {
     }
 
-    // line 74
+    // line 84
     public function block_body($context, array $blocks = array())
     {
-        // line 75
+        // line 85
         echo "            <section id=\"body-wrapper\" class=\"section\">
                 <section class=\"container ";
-        // line 76
+        // line 86
         echo ($context["grid_size"] ?? null);
         echo "\">
                     ";
-        // line 77
+        // line 87
         $this->displayBlock('messages', $context, $blocks);
-        // line 80
+        // line 90
         echo "                    ";
         $this->displayBlock('content', $context, $blocks);
-        // line 81
+        // line 91
         echo "                </section>
             </section>
         ";
     }
 
-    // line 77
+    // line 87
     public function block_messages($context, array $blocks = array())
     {
-        // line 78
+        // line 88
         echo "                        ";
         try {
-            $this->loadTemplate("partials/messages.html.twig", "partials/base.html.twig", 78)->display($context);
+            $this->loadTemplate("partials/messages.html.twig", "partials/base.html.twig", 88)->display($context);
         } catch (Twig_Error_Loader $e) {
             // ignore missing template
         }
 
-        // line 79
+        // line 89
         echo "                    ";
     }
 
-    // line 80
+    // line 90
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 88
+    // line 98
     public function block_footer($context, array $blocks = array())
     {
-        // line 89
+        // line 99
         echo "        ";
-        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 89)->display($context);
-        // line 90
+        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 99)->display($context);
+        // line 100
         echo "    ";
     }
 
-    // line 103
+    // line 113
     public function block_bottom($context, array $blocks = array())
     {
-        // line 104
+        // line 114
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
@@ -339,7 +370,7 @@ class __TwigTemplate_91d8641f4b19a29c6888a4b810f6714969b6368339f621c16af73aa3c71
 
     public function getDebugInfo()
     {
-        return array (  324 => 104,  321 => 103,  317 => 90,  314 => 89,  311 => 88,  306 => 80,  302 => 79,  294 => 78,  291 => 77,  285 => 81,  282 => 80,  280 => 77,  276 => 76,  273 => 75,  270 => 74,  265 => 71,  261 => 51,  258 => 50,  255 => 49,  239 => 57,  233 => 55,  231 => 54,  227 => 52,  225 => 49,  219 => 45,  217 => 44,  211 => 41,  208 => 40,  205 => 39,  199 => 37,  195 => 32,  192 => 31,  189 => 30,  186 => 29,  183 => 28,  179 => 25,  176 => 24,  173 => 23,  170 => 22,  165 => 21,  160 => 20,  157 => 19,  154 => 18,  146 => 33,  144 => 28,  138 => 26,  136 => 18,  131 => 16,  127 => 15,  124 => 14,  122 => 13,  111 => 9,  108 => 8,  105 => 7,  98 => 106,  96 => 103,  90 => 99,  88 => 98,  84 => 96,  82 => 95,  76 => 91,  74 => 88,  68 => 84,  66 => 74,  62 => 72,  60 => 71,  57 => 70,  55 => 39,  50 => 37,  47 => 36,  45 => 7,  40 => 5,  37 => 4,  35 => 3,  33 => 2,  31 => 1,);
+        return array (  355 => 114,  352 => 113,  348 => 100,  345 => 99,  342 => 98,  337 => 90,  333 => 89,  325 => 88,  322 => 87,  316 => 91,  313 => 90,  311 => 87,  307 => 86,  304 => 85,  301 => 84,  296 => 81,  292 => 61,  289 => 60,  286 => 59,  270 => 67,  264 => 65,  262 => 64,  258 => 62,  256 => 59,  250 => 55,  248 => 54,  242 => 51,  239 => 50,  236 => 49,  230 => 47,  226 => 42,  223 => 41,  220 => 40,  217 => 39,  214 => 38,  210 => 35,  207 => 34,  204 => 33,  201 => 32,  196 => 31,  191 => 30,  188 => 29,  185 => 28,  177 => 43,  175 => 38,  169 => 36,  167 => 28,  162 => 26,  156 => 23,  152 => 22,  147 => 20,  143 => 19,  139 => 18,  135 => 17,  131 => 16,  127 => 15,  124 => 14,  122 => 13,  111 => 9,  108 => 8,  105 => 7,  98 => 116,  96 => 113,  90 => 109,  88 => 108,  84 => 106,  82 => 105,  76 => 101,  74 => 98,  68 => 94,  66 => 84,  62 => 82,  60 => 81,  57 => 80,  55 => 49,  50 => 47,  47 => 46,  45 => 7,  40 => 5,  37 => 4,  35 => 3,  33 => 2,  31 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -366,7 +397,17 @@ class __TwigTemplate_91d8641f4b19a29c6888a4b810f6714969b6368339f621c16af73aa3c71
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
     {% include 'partials/metadata.html.twig' %}
 
-    <link rel=\"icon\" type=\"image/png\" href=\"{{ url('theme://images/favicon.png') }}\" />
+    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"{{ url('theme://images/favicons/apple-touch-icon.png') }}\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"{{ url('theme://images/favicons/favicon-32x32.png') }}\">
+    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"{{ url('theme://images/favicons/favicon-16x16.png') }}\">
+    <link rel=\"manifest\" href=\"{{ url('theme://images/favicons/site.webmanifest') }}\">
+    <link rel=\"mask-icon\" href=\"{{ url('theme://images/favicons/safari-pinned-tab.svg') }}\" color=\"#4c4c4c\">
+    <link rel=\"shortcut icon\" href=\"{{ url('theme://images/favicons/favicon.ico') }}\">
+    <meta name=\"msapplication-TileColor\" content=\"#ffc40d\">
+    <meta name=\"msapplication-TileImage\" content=\"{{ url('theme://images/favicons/mstile-144x144.png') }}\">
+    <meta name=\"msapplication-config\" content=\"{{ url('theme://images/favicons/browserconfig.xml') }}\">
+    <meta name=\"theme-color\" content=\"#ffffff\">
+
     <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
 
     {% block stylesheets %}

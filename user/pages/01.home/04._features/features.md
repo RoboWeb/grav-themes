@@ -1,41 +1,31 @@
 ---
-title: Homepage Features
-menu: Features
-class: small
+title: Oferta
+menu: Oferta
+class: standard
 features:
-    - header: Markdown Syntax
-      icon: fa fa-text-height
-    - header: Twig Templating
-      icon: fa fa-code
-    - header: Smart Caching
-      icon: fa fa-rocket
-    - header: Flexible Taxonomies
-      icon: fa fa-tags
-    - header: Simple Install
-      icon: fa fa-cloud-download
-    - header: Powerful Plugins
-      icon: fa fa-cogs
-    - header: Intuitive UI
-      icon: fa fa-dashboard
-    - header: File-Based
-      icon: fa fa-file-text
-    - header: Multi-Language
-      icon: fa fa-language
-    - header: Users & Roles
-      icon: fa fa-users  
-    - header: Image Processing
-      icon: fa fa-image   
-    - header: Documentation
-      icon: fa fa-bookmark
-    - header: On Github
-      icon: fa fa-github
-    - header: Responsive Design
-      icon: fa fa-html5
-    - header: CLI Power
-      icon: fa fa-terminal  
-    - header: Awesomazing
-      icon: fa fa-heart-o
+    -
+        icon: 'fa fa-bed'
+        header: 'Praniem tapicerki meblowej'
+        url: 'uslugi/pranie-tapicerki '
+    -
+        icon: 'fa fa-ship'
+        header: 'Praniem tapicerki samochodowej i jachtowej'
+        url: uslugi/pranie-tapicerki-samochodowej-jachtowej
+    -
+        icon: 'fa fa-map-o'
+        header: 'Praniem dywanów'
+        url: uslugi/czyszczenie-dywanu-i-wykladziny
+    -
+        icon: 'fa fa-check-square'
+        header: 'Czyszczeniem wnętrza kabin pojazdów i jachtów'
+    -
+        icon: 'fa fa-shower'
+        header: 'Ozonowaniem pomieszczeń i kabin'
+        url: uslugi/ozonowanie
+    -
+        icon: 'fa fa-pagelines'
+        header: 'Usuwaniem nieprzyjemnych zapachów'
 ---
 
-# Stuffed Full of Features
-## **Check out small smattering...**
+# Oto skromna lista naszych usług
+## **Zajmujemy się profesjonalnie i skutecznie:**
